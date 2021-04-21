@@ -1,0 +1,109 @@
+/* Variables*/
+:root {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+ --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--Very-Light-Gray);
+}
+.container {
+    padding-top:60px ;
+    padding-left: 30px;
+    padding-right: 30px;
+  
+}
+p {
+    font-size: 14px;
+    opacity: 40%;
+}
+/*border*/
+.blue {
+    border-top:3px var(--Cyan) solid ;
+}
+.red {
+    border-top:3px var(--Red) solid ;
+}
+.yellow {
+    border-top:3px var(--Orange) solid ;
+}
+.blue-2 {
+    border-top:3px var(--Blue) solid ;
+}
+
+/*cards*/
+.text-content h2 {
+color: #444;
+font-weight: 100;
+opacity: 60%;
+margin: 0;
+
+}
+.text-content .main-heading {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+.text-content p {
+    opacity: 40%;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 60px;
+    width: 320px;
+}
+.card {
+    padding: 10px 30px;
+    
+    background-color: #fff;
+    border-radius: 7px;
+}
+.cards .icon img {
+    margin-left: 214px;
+    margin-bottom: 20px;
+}
+.card p {
+    margin-bottom: 60px;
+}
+@media (min-width:1440px) {
+    
+    .container {
+        text-align: center;
+     
+    }
+    .cards {
+       margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+    gap: 1rem;
+   
+    }
+   .col {
+    position: relative;
+    bottom: -191px;
+   }
+   .row {
+    position: relative;
+    bottom: -336px;
+    left: -132px;
+   }
+   .center {
+    position: relative;
+   
+    left: 206px;
+}
+   
+}
